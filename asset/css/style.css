@@ -1,0 +1,357 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.text-white {
+  color:#fff;
+}
+
+.mg-cnt {
+  margin: 0 8px;
+}
+
+#heading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 46.5px;
+  background-color: #000;
+  z-index: 1;
+  overflow: hidden;
+}
+
+#nav li {
+  display: inline-block;
+  position: relative;
+}
+
+#nav > li > a {
+  color: #fff;
+  line-height: 46.5px;
+  padding: 0 24px;
+  text-transform: uppercase;
+}
+
+#nav li a {
+  display: inline-block;
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#nav li:hover .subnav {
+  display: block;
+}
+
+#nav li:hover > a {
+  background-color: #cacaca;
+  color: #000;
+}
+
+.nav-down {
+  font-size: 12px;
+}
+
+.nav-menu,
+.nav-search {
+  color: #fff;
+  float: right;
+  padding: 12px 24px;
+}
+
+.nav-search:hover {
+  background-color: red;
+  cursor: pointer;
+}
+
+#nav .subnav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: #fff;
+}
+
+.subnav {
+  box-shadow: 0.5px 0.5px 10px #0000004f;
+}
+
+.subnav li a {
+  color: #000;
+  width: 160px;
+  padding: 0 16px;
+  line-height: 38.5px;
+}
+
+.nav-menu {
+  display: none;
+}
+
+.nav-menu:hover {
+  background-color: #ccc;
+  color: #000;
+}
+
+#slide {
+  z-index: -1;
+  margin-top: 46.5px;
+  padding-top: 50%;
+  background: url('/w3-school/asset/img/shiba.jpg') top center / cover no-repeat;
+  position: relative;
+}
+
+.text-content {
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.text-heading {
+  font-size: 24px;
+  margin: 10px 0;
+  font-weight: 400;
+}
+
+.text-desription {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.content-section {
+  width: 800px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.section-heading,
+.section-desription {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.section-heading {
+  font-size: 30px;
+ font-weight: 400;
+ letter-spacing: 6px;
+}
+
+.section-desription{
+  font-size: 15px;
+  opacity: 0.6;
+  font-style: italic;
+  margin: 15px 0;
+}
+
+.section-paragrap {
+  font-size: 15px;
+  text-align: justify;
+  margin: 15px 0;
+}
+
+.member-list {
+  text-align: center;
+  margin: 32px 0;
+  overflow: hidden;
+}
+
+.member-item {
+  display: block;
+  float: left;
+  width: 33.333333333%;
+}
+
+.member-name {
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+.member-img {
+  width: 153.59px;
+  border-radius: 5px;
+}
+
+.tour-section {
+  background-color: #000;
+}
+
+.ticketes-list li {
+  color: #323131;
+  opacity: 0.8;
+  list-style-type: none;
+  padding: 8px 16px;
+  border-bottom: solid 1px #000;
+}
+
+.ticketes-list {
+  width: 100%;
+  background-color: #fff;
+  margin-top: 40px;
+}
+
+.sold-out {
+  color: #fff;
+  padding: 0 8px;
+  line-height: 10px;
+  margin-left: 10px;
+  background-color: red;
+}
+
+.quantity {
+  color: #fff;
+  background-color: #000;
+  border-radius: 50%;
+  float: right;
+  padding: 0 8px;
+  margin-right: 16px;
+}
+
+.tour-list {
+  width: 100%;
+  overflow: hidden;
+  padding: 32px 0px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.tour-place {
+  background-color: #fff;
+}
+
+.tour-content {
+  padding: 0 16px;
+}
+
+.tour-img {
+  text-align: center;
+  width: 100%;
+}
+
+.tour-img:hover {
+  opacity: 0.6;
+}
+
+.tour-name,
+.tour-time,
+.tour-drs {
+  margin: 15px 0;
+}
+
+.tour-name {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.tour-time {
+  opacity: 0.6;
+}
+
+.tour-btn {
+  margin-bottom: 16px;
+  background-color: #000;
+  color: #fff;
+  height: 38.5px;
+  border: none;
+  width: 107px;
+}
+
+.tour-btn:hover {
+  background-color: #cccccc;
+  color: #000;
+  cursor: pointer;
+}
+
+.contact-section {
+  margin-top: 52px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-drs p {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.contact-icon {
+  margin-right: 10px;
+}
+
+.contact-name {
+  margin-right: 18px;
+}
+
+.contact-name,
+.contact-email {
+  height: 40px;
+  padding-left: 8px;
+  opacity: 0.6;
+}
+
+.contact-message {
+  width: 100%;
+  height: 40px;
+  margin: 12px 0;
+  opacity: 0.6;
+  padding-left: 8px;
+}
+
+.contact-btn {
+  float: right;
+  height: 38.5px;
+  padding: 0 16px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+}
+
+.contact-btn:hover {
+  background-color: #ccc;
+  color: #000;
+  cursor: pointer;
+}
+
+.content-footer {
+  background: url('/w3-school/asset/img/footer.jpg') center / cover no-repeat;
+  margin-top: 50px;
+}
+
+.footer-img {
+  width: 100%;
+}
+
+#footer {
+  text-align: center;
+  padding: 64px 16px;
+}
+
+.footer-social {
+  margin-bottom: 10px;
+}
+
+.footer-social i {
+  margin: 0 4px;
+  font-size: 20px;
+}
+
+.footer-copyright {
+  font-size: 14px;
+  opacity: 0.6;
+  margin-top: 16px;
+}
+
+.footer-copyright a {
+  color: #000;
+}
