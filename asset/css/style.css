@@ -6,6 +6,7 @@
 
 html {
   font-family: 'Segoe UI', Arial, sans-serif;
+  scroll-behavior: smooth;
 }
 
 .text-white {
@@ -24,7 +25,6 @@ html {
   height: 46.5px;
   background-color: #000;
   z-index: 1;
-  overflow: hidden;
 }
 
 #nav li {
@@ -174,7 +174,7 @@ html {
 }
 
 .member-name {
-  margin: 10px 0;
+  margin: 12px 0;
   font-size: 15px;
 }
 
@@ -226,7 +226,16 @@ html {
   justify-content: space-around;
 }
 
+.tour-place:first-child {
+  margin-left: -8px;
+}
+
+.tour-place:last-child {
+  margin-right: -8px;
+}
+
 .tour-place {
+  margin: 0 8px;
   background-color: #fff;
 }
 
@@ -289,6 +298,11 @@ html {
   margin-right: 10px;
 }
 
+.contact-name-email {
+  display: flex;
+  justify-content: space-between;
+}
+
 .contact-name {
   margin-right: 18px;
 }
@@ -298,6 +312,12 @@ html {
   height: 40px;
   padding-left: 8px;
   opacity: 0.6;
+}
+
+.contact-name,
+.contact-email,
+.contact-message {
+  border: 1px solid #00000078;
 }
 
 .contact-message {
